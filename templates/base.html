@@ -22,7 +22,12 @@
 <body>
     {% include 'includes/header.html' %}
 
-    <h1>This is my first blog website</h1>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    {% include 'includes/footer.html' %}
 </body>
 
 </html>
