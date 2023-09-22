@@ -28,9 +28,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['think-green-blog-91022c17e136.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['think-green-blog-91022c17e136.herokuapp.com', '8000-ahmadhazrati-djangoblog-4wfrbbpo108.ws-eu104.gitpod.io']
 
 
 # Application definition
@@ -62,7 +62,9 @@ ROOT_URLCONF = 'thinkgreen.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_DIR],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates')
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
