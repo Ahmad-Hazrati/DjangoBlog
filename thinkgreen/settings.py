@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True #'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['think-green-blog-91022c17e136.herokuapp.com', '8000-ahmadhazrati-djangoblog-4wfrbbpo108.ws-eu104.gitpod.io']
 
