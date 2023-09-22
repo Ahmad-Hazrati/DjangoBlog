@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    /* Fonts */
+    --title: 'Oswald', serif;
+    --main-font: 'Roboto', serif;
+    
+    /* Colors */
+    --green: #018100;
+    --off-white: #f6f6f6;
+    --white: #fff;
+    --black: #000000;
+    --Shadow-Warrior: #1c2826;
+    --Art-Nouveau-Green: #989930;
+    --Hinterlands-Green: #354917;
+    --Brownish-Green: #767508;
+
+
+    /* Utilities */
+    --box-shadow: 1px -1px 7px 0 #00000061;
+    --border: 1px solid #00000030;
+
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title)
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: var(--green);
+}
+
+/* Header */
+.navbar .container-fluid {
+    background-color: var(--off-white);
+    box-shadow: var(--box-shadow);
+
+}
+
+a.nav-link {
+    color: var(--green);
+    font-weight: 500;
+}
+
+img.logo {
+    width: 4rem;
+}
