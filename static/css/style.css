@@ -7,14 +7,12 @@
     
     /* Colors */
     --green: #018100;
-    /* --off-white: #f6f6f6; */
-    --off-white: #f3f3f3;
+    --background: #3f006a0f;
+    --blue: #0d6efd;
+    --black: #000;
+    --off-white: #f6f6f6;
     --white: #fff;
-    --black: #000000;
-    --Shadow-Warrior: #1c2826;
-    --Art-Nouveau-Green: #989930;
-    --Hinterlands-Green: #354917;
-    --Brownish-Green: #767508;
+    --orange: #ffbf50;
 
 
     /* Utilities */
@@ -43,7 +41,7 @@ main {
 }
 
 /* Header */
-.navbar .container-fluid {
+.navbar {
     background-color: var(--off-white);
     box-shadow: var(--box-shadow);
 
@@ -51,11 +49,15 @@ main {
 
 a.nav-link {
     color: var(--green);
-    font-weight: 500;
 }
 
 img.logo {
     width: 4rem;
+}
+
+.active {
+    border-bottom: 2px solid var(--green);
+    font-weight: 500;
 }
 
 /* footer */
@@ -72,4 +74,11 @@ footer {
 .social-icon {
     height: 2rem;
     margin: 1rem;
+}
+
+.form {
+    width: 100%;
+    margin: 3% auto;
+    box-shadow: var(--smal-box-shadow);
+    border-radius: 5px;
 }
